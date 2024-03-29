@@ -1,0 +1,431 @@
+body{
+    background: linear-gradient(rgba(147, 147, 182, 0.8),rgba(159, 159, 184, 0.6));
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid red; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px 0;
+    height: 20vh;
+}
+.logo h1{
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 18px;
+    background: lightskyblue;
+    border-radius: 10px ;
+    padding: 5px 10px;
+    text-shadow: 5px 0px 5px black;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+}
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom:-1px ;
+}
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    right: 0;
+    top:-1px ;
+}
+a:hover::after,a:hover::before{
+    width:100%;
+    transition: 0.3s;
+}
+.home-container{
+    width: 800px;
+    height: 80vh;
+    background: linear-gradient(to left,rgb(10, 143, 225),rgb(156, 156, 228));
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 60px;
+    margin:5px auto;
+  
+}
+.book input {
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+.home-content{
+    padding: 40px 10px;
+}
+.home-content h5{
+    margin: 20px 0;
+    margin: 40px 20px;
+}
+.home-content h2{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.homepic img{
+    margin-left: 20px;
+    width: 300px;
+    object-fit: cover;
+    border: none;
+    border-radius: 50%;
+}
+.form{
+    padding:40px;
+    margin:0px auto;
+    width: 600px;
+    height: 80vh;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+}
+/* .contact-container{
+display: flex;
+flex-direction: row;
+width: 800px;
+height: 55vh;
+margin: 0px auto;
+align-items: center;
+} */
+/* .contacts{
+font-size: 20px;
+font-weight: bold;
+font-style: italic;
+width: 400px;
+height: 200px;
+margin: 10px;
+padding: 20px;
+border: 2px solid white;
+border-radius: 20px;
+} */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+.service-container{
+    width: 80%;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;    
+    padding-bottom: 40px;
+}
+.service-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+   align-items: center;
+}
+
+.service-img img{    
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+}
+.about-container{
+    width: 50vw;
+    height: 70vh;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* styling the about section on the home page */
+.home_about_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+.home_about_image{
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+}
+.home_about_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.home_about_text{
+    width: 600px;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+.home_about_text h1{
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.home_about_text h4{
+    font-size: 20px;
+}
+.home_about_text p{
+   line-height: 24px;
+}
+h1,h2,h3,h4{
+    color: rgb(9, 9, 61);
+}
+button{
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+button a:hover{
+    color: black;
+}
+/* styling our main about page */
+.about_page_container{
+    padding-top: 80px;
+}
+.about_page_container h1, h4{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.about_page{
+    width: 100%;
+    padding: 80px 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.about_page_content{
+    /* border: 2px solid red; */
+    padding: 10px 20px;
+    width: 600px;
+
+}
+.about_page_content h1, h4{
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.about_page_content h2{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+p{
+    padding-bottom: 30px;
+    line-height: 24px;
+}
+.about_page_image{
+    width: 500px;
+    height: 500px;
+    border-radius: 6px;
+}
+.about_page_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/* sub-section on about page styling */
+.our_support{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+.our_support_image{
+    width: 500px;
+    height: 300px;
+    border-radius: 6px;
+}
+.our_support_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.our_support_text{
+    width: 600px;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+h2{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+/* booking appointment section on home page styling */
+.about_appointment{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(147, 147, 182, 0.8),rgba(159, 159, 184, 0.6)),url(./images/equipment.avif)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about_appointment h4{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    /* border: 1px solid blue; */
+    height: 100%;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 30px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.contact-form {
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 30px;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: rgb(164, 164, 238);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Footer links */
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 0;
+    }
+}
+
+
+
+
+
